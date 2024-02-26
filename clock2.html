@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+    <title>Clock</title>
+    <script type="text/javascript">
+      function displayClock() {
+        document.getElementById('clock').innerHTML = new Date();
+        setTimeout('displayClock()', 100) // Better accuracy with 100ms
+      }
+    </script>
+    <style>
+    h2{
+            font-family:'Silkscreen', sans-serif;
+
+color: #ffffff;
+            background-color: transparent;
+                background-color: 36393f; margin: auto; width: 85%; border: 10px dashed #7289DA; padding: 10px; text-align: center; border-radius: 25px; margin-top: 0.5em;"<span id='clock' style="font-size:2.5vw; color: #000000
+                    background-color: #000000;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(100px);
+  border: 1px solid rgba(255, 255, 255, 1);
+background-image: url("blur3.jpeg");
+    background-position: center;
+  margin: -100px 0 0 -100px transition-delay: 2000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+            background-size: cover
+        }
+  </head>
+  <body onload=displayClock();>
+    
+    <div style="background-color: 36393f; margin: auto; width: 85%; border: 10px dashed #7289DA; padding: 10px; text-align: center; border-radius: 25px; margin-top: 3em;"> <h3>The Current Date and Time Right Now Is:</h3><span id='clock' style="font-size:2.5vw; color: white; background-color: #000000;
+  background: rgba(50, 50, 50, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(50, 50, 50, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(100px);
+  border: 1px solid rgba(50, 50, 50, 1);"/>
+        </div>
+      
+  </body>
+        </html>
